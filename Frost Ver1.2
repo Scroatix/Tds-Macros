@@ -171,9 +171,6 @@ local script_content = [[
                 TDS:Upgrade(23)
                 TDS:Upgrade(24)
                 TDS:Upgrade(24)
-
-
-
                 TDS:Place("Accelerator", -12.2662086, 2.35000062, -3.25761509) -- 25
                 TDS:Upgrade(25)
                 TDS:Upgrade(25)
@@ -251,6 +248,9 @@ local script_content = [[
                 TDS:SetOption(21, "Unit 1", "Riot Guard", 40)
                 TDS:SetOption(21, "Unit 2", "Riot Guard", 40)
                 TDS:SetOption(21, "Unit 3", "Riot Guard", 40)
+                TDS:Ability(22, "Support Caravan", false)
+                TDS:Ability(23, "Support Caravan", false)
+                TDS:Ability(24, "Support Caravan", false)
             end
             repeat task.wait(1) until IsLobby()
         end
